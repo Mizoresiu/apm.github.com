@@ -1,0 +1,169 @@
+/* 0. 初期設定 */
+
+h1, h2, h3, h4, h5, h6, main, header, footer, section, p, ul, ol, img, hr {
+	margin: 0;
+}
+
+img {
+	display: block;
+	width: 100%;
+}
+
+hr {
+	border-style: solid;
+	border-bottom: 0;
+}
+
+/* 1. 全体 */
+
+html {
+ 
+	font-size: 14px; /* 基本の文字サイズ */
+	line-height: 2; /* 行間。長さの単位は無く数字のみ */
+	font-family: serif; /* 明朝体にしたい場合は「serif」と指定する */
+}
+
+body { margin-left:1em;
+	margin-right:1em;
+	background-color: #e4e2ff; /* 背景色 */
+	color: #000000; /* 文字色 */
+	padding-top: 60px; /* ページ上部の余白 */
+	padding-bottom: 60px; /* ページ下部の余白 */
+}
+
+/* 2. 構造 */
+
+header{
+	width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: left;
+}
+header .headline{
+  font-size: 13px;
+}
+
+footer{
+		margin-top:20em;
+    width: 100%;
+    height: 100px;
+    background-color: #aca8dd;
+    color: black;
+    text-align: center;
+}
+
+ul.footer-menu li {
+display: inline;
+}
+
+
+
+main {
+}
+
+section {
+	margin-right: auto; /* 外側の余白（右側）：自動 */
+	margin-left: auto; /* 外側の余白（左側）：自動 */
+	margin-bottom: 64px;
+	width: 800px; /* 幅 */
+}
+
+div{
+	margin-top:2em;
+	margin-bottom:1em;
+}
+
+
+/* 見出し */
+
+
+h2 {
+	font-size: 24px; /* 文字サイズ */
+	font-weight: bold; /* 文字を太字にしている */
+	text-align:left;
+}
+
+h3{
+	font-size:12px;
+	text-align:center;
+}
+/* 画像 */
+
+img {
+	margin-bottom: 1em;
+}
+
+/* テキスト */
+
+p {
+	text-align:left;
+  margin-top: 1em;
+	margin-bottom: 1em; /* 下部の余白を指定 */
+}
+
+.center {
+	text-align: center; /* テキストをセンター揃え */
+}
+
+.right {
+	text-align: right; /* テキストを右寄せ */
+}
+
+.left {
+	text-align: left; /* テキストを左寄せ */
+}
+
+.caption {
+	font-size: 12px;
+	color: #999999;
+	text-align: right;
+}
+
+/* 罫線 */
+
+hr {
+	margin-bottom:3em;
+	}
+
+/* ボタン */
+
+.button {
+  margin-top: 2em;
+	display: inline-block;
+	background-color: #e4e2ff; /* 背景色 */
+	padding: 0.25em 1em; /* 上下左右の内側の余白を指定 */
+	color: #ffffff;
+	text-decoration: none; /* リンクの下線をここでは表示しない */
+	border-radius: 1em; /* ボタンの角を丸くする */
+}
+
+/*========= LoadingのためのCSS ===============*/
+
+/* Loading背景画面設定　*/
+
+#splash {
+    /*fixedで全面に固定*/
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background:#aca8dd;
+	text-align:center;
+	color:#fff;
+}
+
+/* Loadingバー中央配置　*/
+#splash_text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    z-index: 999;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+}
+a{
+text-decoration:none;
+color:black;
+
+}
